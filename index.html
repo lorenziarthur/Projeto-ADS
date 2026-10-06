@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Calculadora de Produtividade</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+   <header>
+     <div>
+            <img class="imgtopo" src="imagens/Coca-Cola_logo.svg.webp">
+           </div>
+    
+           <div>
+               <ul>
+                   <li>GITHUB</li>
+               </ul>
+       
+           </div>
+    
+        </header>
+     
+     <section id="primeira seção">
+         <div class="container">
+           <select id="produto" onchange="atualizarEmbalagens()">
+             <option value="refrigerante">Refrigernate</option>
+             <option value="cerveja">Cerveja</option>  
+           </select>
+             
+             <input type="text" list="embalagem" id="tipoEmbalagem" placeholder="Tipo de embalagem" class="texto">
+             <datalist id="embalagem">
+                 <option value="Lata"> </option>
+                 <option value="Garrafa PET"> </option>
+                 <option value="Garrafa De Vidro"> </option>
+                 <option value="Barril"> </option>
+             </datalist>
+             
+             <input type="number" id="quantidade" placeholder="Quantidade" class="texto">
+             <input type="number" id="velocidade" placeholder="Velocidade" class="texto">
+             <input type="button" placeholder="Calcular" value="Calcular" class="btn" onclick="redirecionar()">
+                     </div>
+     
+          
+             <table>
+             <tr>
+                <th>Tipo de embalagem</th>
+                <th>Preço</th>       
+             </tr>
+             <tr>
+                 <td id="tipoEmbalagemResultado">-</td>
+                 <td id="precoResultado">-</td>
+             </tr>
+     
+     
+             <tr>
+             <th>Velocidade</th>
+             </tr>
+             <tr>
+                 <td id="velocidadeResultado">-</td>
+             </tr>
+     
+     
+             <tr>
+                 <th>Quantidade</th>
+             </tr>
+     
+              <tr> 
+                 <td id="quantidadeResultado">-</td>
+             </tr>
+     
+             <tr>
+                 <th>Perda %</th>
+             </tr>
+     
+             <tr>
+                 <td id="perdaResultado">-</td>
+             </tr>
+     
+             <tr>
+                 <th>Total</th>
+             </tr>
+     
+             <tr>
+                 <td id="totalComPerdaResultado">-</td>
+     
+         </table>
+         
+     
+     </div>
+     
+     </section>
+     
+     <section id="segunda seção">
+         
+         
+     <script src="main.js"></script>
+     </body>
+     </html>
