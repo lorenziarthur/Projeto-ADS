@@ -49,5 +49,18 @@ function atualizarEmbalagens() {
     option.value = embalagem;
     datalist.appendChild(option);
   });
+
+   document.getElementById("tipoEmbalagemResultado").textContent = "-";
+   document.getElementById("precoResultado").textContent = "-";
+   document.getElementById("velocidadeResultado").textContent = "-";
+   document.getElementById("quantidadeResultado").textContent = "-";
+   document.getElementById("perdaResultado").textContent = "-";
+   document.getElementById("totalComPerdaResultado").textContent = "-";
+
+   document.getElementById("tipoEmbalagem").value = "";
+   document.getElementById("velocidade").value = "";
+   document.getElementById("quantidade").value = "";
+
+
 }
 atualizarEmbalagens();

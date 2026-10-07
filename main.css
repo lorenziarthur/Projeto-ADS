@@ -48,6 +48,7 @@ li{
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: rgb(39, 81, 184);
 }
 
 table{
@@ -62,6 +63,6 @@ th, td{
 }
 
 th{
-    background-color: rgb(243, 3, 3);
+    background-color: rgb(39, 81, 184);
     color: white;
 }
