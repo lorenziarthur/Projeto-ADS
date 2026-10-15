@@ -10,16 +10,9 @@
    <header>
      <div>
         <a href="login.html">
-            <img class="imgtopo" src="imagens/Coca-Cola_logo.svg.webp">
+            <img class="imgtopo" src="imagens/logo 3.png">
         </a>
      </div>
-    
-           <div>
-               <ul>
-                   <li>GITHUB</li>
-               </ul>
-       
-           </div>
     
         </header>
      
@@ -29,20 +22,31 @@
              <option value="refrigerante">Refrigernate</option>
              <option value="cerveja">Cerveja</option>  
            </select>
-             
-             <input type="text" list="embalagem" id="tipoEmbalagem" placeholder="Tipo de embalagem" class="texto">
-             <datalist id="embalagem">
-                 <option value="Lata"> </option>
-                 <option value="Garrafa PET"> </option>
-                 <option value="Garrafa De Vidro"> </option>
-                 <option value="Barril"> </option>
-             </datalist>
-             
+           
+           <div class="sei">
+            <label for="tipoEmbalagem">Tipo de embalagem</label>
+           <input type="text" list="embalagem" id="tipoEmbalagem" placeholder="Tipo de embalagem" class="texto">
+           </div>
+           <datalist id="embalagem">
+               <option value="Lata"> </option>
+               <option value="Garrafa PET"> </option>
+               <option value="Garrafa De Vidro"> </option>
+               <option value="Barril"> </option>
+            </datalist>
+            
+
+            <div class="sei">
+             <label for="quantidade">Quantidade</label>
              <input type="number" id="quantidade" placeholder="Quantidade" class="texto">
-             <input type="number" id="velocidade" placeholder="Velocidade" class="texto">
+                </div>
+
+                <div class="sei">
+             <label for="velocidade">Velocidade(min)</label>
+             <input type="number" id="velocidade" placeholder="Velocidade(min)" class="texto">
              <input type="button" placeholder="Calcular" value="Calcular" class="btn" onclick="redirecionar()">
                      </div>
-     
+                     </div>
+       
           
              <table>
              <tr>
@@ -56,7 +60,7 @@
      
      
              <tr>
-             <th>Velocidade</th>
+             <th>Velocidade(min)</th>
              </tr>
              <tr>
                  <td id="velocidadeResultado">-</td>
@@ -72,7 +76,7 @@
              </tr>
      
              <tr>
-                 <th>Perda %</th>
+                 <th>Perda % por produto produzido</th>
              </tr>
      
              <tr>
