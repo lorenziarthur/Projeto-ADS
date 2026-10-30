@@ -28,6 +28,10 @@ function redirecionar() {
   const quantidade = parseFloat(document.getElementById("quantidade").value) || 0;
   const velocidade = parseFloat(document.getElementById("velocidade").value) || 0;
   const totalComPerda = quantidade* (1 - perdaPercentual / 100); 
+  if (quantidade <= 0 || velocidade <= 0) {
+    alert("Por favor, insira valores válidos para quantidade e velocidade.");
+    return;
+  }
 
   document.getElementById("tipoEmbalagemResultado").textContent = tipoEmbalagem;
   document.getElementById("precoResultado").textContent = "R$ " + (preco * quantidade).toFixed(2);
